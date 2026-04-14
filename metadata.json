@@ -1,0 +1,5 @@
+{
+  "name": "EV Töltési Idő Kalkulátor",
+  "description": "Egy kalkulátor, amely megbecsüli az elektromos járművek töltési idejét az otthoni töltési lehetőségek (1 vagy 3 fázis, állítható áramerősség), az akkumulátor kapacitása és a töltöttségi állapot alapján.",
+  "requestFramePermissions": []
+}

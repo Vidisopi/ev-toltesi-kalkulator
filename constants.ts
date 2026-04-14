@@ -1,0 +1,40 @@
+export const VOLTAGE = 230; // Volts per phase
+
+export const DEFAULT_VALUES = {
+    PHASE: 1,
+    AMPERAGE: 16,
+    CAPACITY: 60,
+    START_SOC: 20,
+    TARGET_SOC: 80,
+    EFFICIENCY: 90,
+    ELECTRICITY_PRICE: 70,
+    EV_CONSUMPTION: 18,
+    MONTHLY_MILEAGE: 1500,
+    IS_ICE_COMPARISON_ENABLED: false,
+    ICE_CONSUMPTION: 7,
+    FUEL_PRICE: 600,
+    // Solar defaults
+    IS_SOLAR_ENABLED: false,
+    PANEL_POWER_KW: 8,
+    PEAK_SUN_HOURS: 5,
+    SOLAR_CAPTURE_RATE: 85,
+    GRID_FEED_IN_ENABLED: false,
+    GRID_FEED_IN_PRICE: 15,
+};
+
+export const RANGES = {
+    AMPERAGE: { MIN: 6, MAX: 32, STEP: 1 },
+    CAPACITY: { MIN: 10, MAX: 150, STEP: 1 },
+    SOC: { MIN: 0, MAX: 100, STEP: 1 },
+    EFFICIENCY: { MIN: 70, MAX: 100, STEP: 1 },
+    ELECTRICITY_PRICE: { MIN: 10, MAX: 150, STEP: 1 },
+    EV_CONSUMPTION: { MIN: 10, MAX: 40, STEP: 0.5 },
+    MONTHLY_MILEAGE: { MIN: 100, MAX: 5000, STEP: 100 },
+    ICE_CONSUMPTION: { MIN: 4, MAX: 20, STEP: 0.1 },
+    FUEL_PRICE: { MIN: 400, MAX: 1500, STEP: 5 },
+    // Solar ranges
+    PANEL_POWER_KW: { MIN: 1, MAX: 30, STEP: 1 },
+    PEAK_SUN_HOURS: { MIN: 1, MAX: 14, STEP: 1 },
+    SOLAR_CAPTURE_RATE: { MIN: 10, MAX: 100, STEP: 1 },
+    GRID_FEED_IN_PRICE: { MIN: 0, MAX: 50, STEP: 1 },
+};
